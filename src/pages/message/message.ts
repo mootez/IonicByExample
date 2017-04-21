@@ -6,7 +6,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'message.html'
 })
 export class MessagePage {
-
+  envoyerModel: string = "envoyer";
   constructor(public navCtrl: NavController) {
 
   }

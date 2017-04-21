@@ -1,30 +1,30 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Message
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <div padding>
-    <ion-segment [(ngModel)]="pet">
-      <ion-segment-button value="kittens">
+    <ion-segment [(ngModel)]="envoyerModel">
+      <ion-segment-button value="envoyer">
         <ion-icon ios="ios-cloud-download" md="md-cloud-download"></ion-icon> Message recu
       </ion-segment-button>
-      <ion-segment-button value="puppies">
+      <ion-segment-button value="recu">
         <ion-icon ios="ios-cloud-upload" md="md-cloud-upload"></ion-icon> Message Envoyé
       </ion-segment-button>
     </ion-segment>
   </div>
 
-  <div [ngSwitch]="pet">
-    <ion-list *ngSwitchCase="'puppies'">
+  <div [ngSwitch]="envoyerModel">
+    <ion-list *ngSwitchCase="'envoyer'">
       <ion-item>
         <ion-avatar item-left>
           <img src="assets/img/avatar-ts-buzz.png">
         </ion-avatar>
-        <h2>Buzz Lightyear</h2>
+        <h2>Message 1</h2>
         <p>My eyeballs could have been sucked from their sockets!</p>
         <ion-note item-right>1:12 pm</ion-note>
       </ion-item>
@@ -32,26 +32,18 @@
         <ion-avatar item-left>
           <img src="assets/img/avatar-ts-buzz.png">
         </ion-avatar>
-        <h2>Buzz Lightyear</h2>
+        <h2>Message 2</h2>
         <p>My eyeballs could have been sucked from their sockets!</p>
         <ion-note item-right>1:12 pm</ion-note>
       </ion-item>
     </ion-list>
 
-    <ion-list *ngSwitchCase="'kittens'">
+    <ion-list *ngSwitchCase="'recu'">
       <ion-item>
         <ion-avatar item-left>
           <img src="assets/img/avatar-ts-buzz.png">
         </ion-avatar>
-        <h2>Buzz Lightyear</h2>
-        <p>My eyeballs could have been sucked from their sockets!</p>
-        <ion-note item-right>1:12 pm</ion-note>
-      </ion-item>
-      <ion-item>
-        <ion-avatar item-left>
-          <img src="assets/img/avatar-ts-buzz.png">
-        </ion-avatar>
-        <h2>Buzz Lightyear</h2>
+        <h2>Message 1</h2>
         <p>My eyeballs could have been sucked from their sockets!</p>
         <ion-note item-right>1:12 pm</ion-note>
       </ion-item>

@@ -21,7 +21,6 @@ export class ProfilePage {
   }
 
   goToOtherPage() {
-
    this.navCtrl.push(DetailPage);
   }
 
