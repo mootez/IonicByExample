@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,ViewController } from 'ionic-angular';
 
 
 
@@ -12,7 +12,11 @@ import { NavController } from 'ionic-angular';
 
 export class DetailPage {
 
-  constructor(public navCtrl: NavController) {
+    dismiss() {
+    this.viewCtrl.dismiss();
+  }
+
+  constructor(public navCtrl: NavController,public viewCtrl: ViewController) {
   }
   slides = [
     {

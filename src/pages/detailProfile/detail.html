@@ -1,5 +1,4 @@
-
- <!--
+<!--
  <ion-header>
   <ion-navbar>
     <ion-title>Slides</ion-title>
@@ -32,116 +31,83 @@
   </ion-slides>
 </ion-content>
 -->
-<ion-header>
+<!--<ion-header>
   <ion-navbar>
     <ion-title>
       Detail Profil
     </ion-title>
   </ion-navbar>
-</ion-header>
- 
-<ion-content>
-<ion-card>
+</ion-header>-->
 
-  <ion-item>
-    <ion-avatar item-left>
-      <img src="img/marty-avatar.png">
-    </ion-avatar>
-    <h2>Marty McFly</h2>
-    <p>November 5, 1955</p>
-  </ion-item>
 
-  <ion-card-content>
-    <ion-list>
-      <ion-item-sliding>
-        <ion-item>
-          <ion-avatar item-left>
-            <img src="assets/img/spengler.jpg">
-          </ion-avatar>
-          <h2>Egon</h2>
-          <p>We're gonna go full stream.</p>
-        </ion-item>
-        <ion-item-options>
-          <button ion-button color="light" icon-left>
-          <ion-icon name="ios-more"></ion-icon>
-          More
-        </button>
-          <button ion-button color="primary" icon-left>
-          <ion-icon name="text"></ion-icon>
-          Text
-        </button>
-          <button ion-button color="secondary" icon-left>
-          <ion-icon name="call"></ion-icon>
-          Call
-        </button>
-        </ion-item-options>
-      </ion-item-sliding>
 
-      <ion-item-sliding>
-        <ion-item>
-          <ion-avatar item-left>
-            <img src="assets/img/tully.jpg">
-          </ion-avatar>
-          <h2>Tully</h2>
-          <p>Okay, who brought the dog?</p>
-        </ion-item>
-        <ion-item-options>
-          <button ion-button color="light" icon-left>
-          <ion-icon name="ios-more"></ion-icon>
-          More
-        </button>
-          <button ion-button color="primary" icon-left>
-          <ion-icon name="text"></ion-icon>
-          Text
-        </button>
-          <button ion-button color="secondary" icon-left>
-          <ion-icon name="call"></ion-icon>
-          Call
-        </button>
-        </ion-item-options>
-      </ion-item-sliding>
-
-      <ion-item-sliding>
-        <ion-item>
-          <ion-avatar item-left>
-            <img src="assets/img/barrett.jpg">
-          </ion-avatar>
-          <h2>Dana</h2>
-          <p>I am The Gatekeeper!</p>
-        </ion-item>
-        <ion-item-options>
-          <button ion-button color="light" icon-left>
-          <ion-icon name="ios-more"></ion-icon>
-          More
-        </button>
-          <button ion-button color="primary" icon-left>
-          <ion-icon name="text"></ion-icon>
-          Text
-        </button>
-          <button ion-button color="secondary" icon-left>
-          <ion-icon name="call"></ion-icon>
-          Call
-        </button>
-        </ion-item-options>
-      </ion-item-sliding>
-
-    </ion-list>
-  </ion-card-content>
-
-  <ion-row>
-    <ion-col>
-      <button ion-button icon-left clear small>
-        <ion-icon name="thumbs-up"></ion-icon>
-        <div>12 Likes</div>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Description
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios">Cancel</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
       </button>
-    </ion-col>
-    <ion-col center text-center>
-      <ion-note>
-        11h ago
-      </ion-note>
-    </ion-col>
-  </ion-row>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
-</ion-card>
+<ion-content class="cards-bg social-cards">
+  <ion-card>
 
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/img/marty-avatar.png">
+      </ion-avatar>
+      <h2>Marty McFly</h2>
+      <p>November 5, 1955</p>
+    </ion-item>
+
+    <img src="assets/img/advance-card-bttf.png">
+
+    <ion-row>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-left>
+        <ion-icon name='thumbs-up'></ion-icon>
+        12 Likes
+      </button>
+      </ion-col>
+      <ion-col>
+      </ion-col>
+      <ion-col align-self-center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+    <hr/>
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+        Whoa. This is heavy.</p>
+    </ion-card-content>
+    <hr/>
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+        Whoa. This is heavy.</p>
+    </ion-card-content>
+    <hr/>
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+        Whoa. This is heavy.</p>
+    </ion-card-content>
+    <hr/>
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+        Whoa. This is heavy.</p>
+    </ion-card-content>
+    <hr/>
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+        Whoa. This is heavy.</p>
+    </ion-card-content>
+    <hr/>
+  </ion-card>
 </ion-content>

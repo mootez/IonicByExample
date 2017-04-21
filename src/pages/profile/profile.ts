@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, AlertController, LoadingController, PopoverController } from 'ionic-angular';
+import { NavController, AlertController, LoadingController, PopoverController, ModalController } from 'ionic-angular';
 import { DetailPage } from '../detailProfile/detail';
 
 
@@ -17,11 +17,13 @@ export class ProfilePage {
   // @ViewChild('popoverText', { read: ElementRef }) text: ElementRef;
 
 
-  constructor(public navCtrl: NavController, private popoverCtrl: PopoverController) {
+  constructor(public navCtrl: NavController, private popoverCtrl: PopoverController, public modalCtrl: ModalController) {
   }
 
   goToOtherPage() {
-   this.navCtrl.push(DetailPage);
+    //   this.navCtrl.push(DetailPage);
+    let modal = this.modalCtrl.create(DetailPage);
+    modal.present();
   }
 
   //  presentPopover(ev) {
